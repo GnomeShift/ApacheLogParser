@@ -1,0 +1,28 @@
+# Данные для подключения к БД
+database:
+  db_name: parser
+  db_user: postgres
+  db_password: pass
+  db_host: localhost
+  db_port: 5432
+  db_engine: postgresql # postgresql/mysql
+
+# Изменение префикса API
+api:
+  api_prefix: /api
+
+logging:
+  logging_level: DEBUG # Уровень логирования приложения (DEBUG, FATAL, ERROR, WARNING, INFO, OFF)
+
+# Отладка Flask
+app:
+  debug: False
+
+# Путь к файлу access.log
+access_log:
+    access_log_file: access.log
+
+# Вспомогательные функции
+structure:
+    disable_db_creation: False # Отключение автосоздания таблицы в БД
+    table_name: apache_logs # Имя создаваемой таблицы
